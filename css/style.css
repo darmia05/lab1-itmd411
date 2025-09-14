@@ -1,0 +1,178 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.avatar img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.title {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #003366;
+}
+
+.role {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Contact Links */
+.contacts {
+  margin-top: 0.5rem;
+}
+
+.contacts a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.contacts a:hover {
+  color: #004080;
+  text-decoration: underline;
+}
+
+/* Sections */
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  color: #003366;
+}
+
+p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Sidebar: Education + Skills */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.skill-list li {
+  background: #eaf3ff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  color: #003366;
+}
+
+/* Experience + Projects */
+.job, .project {
+  margin-bottom: 1.5rem;
+}
+
+.job h3, .project h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+  color: #004080;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 2px solid #ddd;
+  padding-top: 1rem;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .sidebar {
+    margin-top: 0;
+  }
+}
