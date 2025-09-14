@@ -92,8 +92,8 @@ h1 {
 }
 
 .contacts a img.icon {
-  width: 32px;   
-  height: 32px;
+  width: 64px;   
+  height: 64px;
   object-fit: contain;
 }
 
